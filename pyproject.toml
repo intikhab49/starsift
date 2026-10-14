@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starsift"
+dynamic = ["version"]
+description = "Check whether the accounts behind a GitHub repo's stars look real, now that GitHub hides the stargazer list. Compares live stargazers, archived stars and fork owners with a time-matched control group."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = []
+authors = [{name = "Intikhab Azam"}]
+keywords = ["github", "github-stars", "fake-stars", "stargazers", "astroturfing", "star-farm", "gh-archive", "open-source", "supply-chain", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+
+[project.urls]
+Repository = "https://github.com/intikhab49/starsift"
+Issues = "https://github.com/intikhab49/starsift/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+starsift = "starsift.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "starsift.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

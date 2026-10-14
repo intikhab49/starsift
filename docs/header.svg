@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340"
+     viewBox="0 0 1200 340" role="img"
+     aria-label="starsift: check whether the accounts behind a GitHub repo's stars look real. On repos a
+     fake-star study suspected, it found a farm signature on 21 of 25;
+     on repos it did not suspect, 0 of 25.">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFB020"/>
+      <stop offset="55%" stop-color="#FF6B4A"/>
+      <stop offset="100%" stop-color="#FF4E88"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF6B4A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0A0A14" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0 L0 0 0 28" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="340" fill="#0A0A14"/>
+  <rect width="1200" height="340" fill="url(#grid)"/>
+  <circle cx="1040" cy="70" r="240" fill="url(#fade)"/>
+
+  <text x="64" y="86" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" letter-spacing="3.5" fill="#A3E635">GITHUB STARS
+        &#183; FAKE ACCOUNT CHECK</text>
+
+  <text x="60" y="164" font-family="Georgia,'Times New Roman',serif" font-size="68" font-weight="700"
+        fill="url(#grad)">starsift</text>
+
+  <text x="64" y="204" font-family="-apple-system,Segoe UI,Helvetica,sans-serif" font-size="19" fill="#E8E8F0">Check whether the accounts behind
+        a repo's stars look real.</text>
+  <text x="64" y="232" font-family="-apple-system,Segoe UI,Helvetica,sans-serif" font-size="19" fill="#8B8BA7">Works now that GitHub hides the
+        stargazer list.</text>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">
+    <rect x="64" y="262" width="164" height="28" rx="14" fill="none" stroke="#FFB020" stroke-opacity="0.55"/>
+    <text x="146" y="281" fill="#FFB020" text-anchor="middle">ZERO DEPENDENCIES</text>
+    <rect x="240" y="262" width="188" height="28" rx="14" fill="none" stroke="#A3E635" stroke-opacity="0.55"/>
+    <text x="334" y="281" fill="#A3E635" text-anchor="middle">TIME-MATCHED CONTROL</text>
+    <rect x="440" y="262" width="107" height="28" rx="14" fill="none" stroke="#5B9BFF" stroke-opacity="0.55"/>
+    <text x="493" y="281" fill="#5B9BFF" text-anchor="middle">GH ARCHIVE</text>
+    <rect x="559" y="262" width="50" height="28" rx="14" fill="none" stroke="#FF4E88" stroke-opacity="0.55"/>
+    <text x="584" y="281" fill="#FF4E88" text-anchor="middle">MIT</text>
+  </g>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12.5">
+    <rect x="750" y="57" width="404" height="226" rx="10" fill="#12121F" stroke="#8B8BA7" stroke-opacity="0.35"/>
+    <text x="768" y="87" fill="#E8E8F0">50 random repos from a fake-star study</text>
+    <text x="768" y="119" fill="#FF6B4A" font-weight="700">25 the study suspected</text>
+    <rect x="768.0" y="129" width="307.1" height="14" rx="3" fill="#FF6B4A"/>
+    <rect x="1077.1" y="129" width="56.9" height="14" rx="3" fill="#8B8BA7"/>
+    <text x="768" y="163" fill="#E8E8F0">21 farm signature &#183; 4 too little data &#183; 0 clean</text>
+    <text x="768" y="197" fill="#A3E635" font-weight="700">25 it did not suspect</text>
+    <rect x="768.0" y="207" width="336.6" height="14" rx="3" fill="#A3E635"/>
+    <rect x="1106.6" y="207" width="27.4" height="14" rx="3" fill="#FFB020"/>
+    <text x="768" y="241" fill="#E8E8F0">23 clean &#183; 2 recent or mixed &#183; 0 farm</text>
+    <text x="768" y="267" fill="#8B8BA7">checked 2026-10-14 &#183; time-matched control</text>
+  </g>
+</svg>
