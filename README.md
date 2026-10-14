@@ -109,17 +109,17 @@ The accounts that starred it in October 2024 are still starring the same handful
 flowchart LR
     FEED["repo event feed<br/><i>last 300 events</i>"] --> LIVE["live stargazers"]
     ARCHIVE["GH Archive<br/><i>through ClickHouse's playground</i>"] --> STARS["archived stars"]
-    FORKLIST["fork list<br/><i>newest to oldest</i>"] --> FORKS["fork owners"]
     ARCHIVE --> CONTROL["control: random accounts,<br/>other repos, same hours"]
-    LIVE --> PROFILES["GitHub profiles<br/><i>age · activity · sign-up day · still there?</i>"]
-    STARS --> PROFILES
-    FORKS --> PROFILES
-    CONTROL --> PROFILES
-    PROFILES --> SIGNALS["4 signals, each<br/>tested against the control"]
+    FORKLIST["fork list<br/><i>newest to oldest</i>"] --> FORKS["fork owners"]
     LIVE --> SHARED["shared stars<br/><i>small repos starred in lockstep</i>"]
     STARS --> SHARED
-    SIGNALS --> VERDICT["verdict<br/>farm · recent · mixed · clean"]
-    SHARED --> VERDICT
+    LIVE --> PROFILES["GitHub profiles<br/><i>age · activity · sign-up day · still there?</i>"]
+    STARS --> PROFILES
+    CONTROL --> PROFILES
+    FORKS --> PROFILES
+    PROFILES --> SIGNALS["4 signals, each<br/>tested against the control"]
+    SHARED --> VERDICT["verdict<br/>farm · recent · mixed · clean"]
+    SIGNALS --> VERDICT
 
     style SIGNALS fill:#2a78d6,stroke:#1c5cab,color:#fff
     style VERDICT fill:#1baf7a,stroke:#158a60,color:#fff
